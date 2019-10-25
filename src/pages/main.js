@@ -18,6 +18,7 @@ export default function Main({ match, history }) {
   const [repos, setRepos] = useState([]);
   const [userExist, setUserExist] = useState("");
   const [username, setUsername] = useState("");
+  var totalStar = 0;
 
   async function handleLogin(e) {
     e.preventDefault();
@@ -31,6 +32,10 @@ export default function Main({ match, history }) {
     } catch (err) {
       history.push("/NotFound");
     }
+  }
+
+  for (let i = 0; i < repos.length; i++) {
+    totalStar += repos[i].stargazers_count;
   }
 
   useEffect(() => {
@@ -50,7 +55,7 @@ export default function Main({ match, history }) {
     }
 
     loadUsers();
-  }, [match.params.id]);
+  }, [match.params.id, totalStar]);
 
   return (
     <>
@@ -90,7 +95,7 @@ export default function Main({ match, history }) {
               </div>
               <div className="information">
                 <img src={starIcon} />
-                <a>1.000.000</a>
+                <a>{totalStar}</a>
               </div>
               <div className="information">
                 <img src={repositorieIcon} />
@@ -111,7 +116,7 @@ export default function Main({ match, history }) {
                 <a className="repo-description">{repo.description}</a>
                 <div className="stars-repo">
                   <img src={starIcon} />
-                  <a>{repo.stargazers === 0 ? repo.stargazers : 0}</a>
+                  <a>{repo.stargazers_count}</a>
                 </div>
               </>
             ))}
