@@ -1,0 +1,132 @@
+.total-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-bar {
+  margin-top: 35px;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90%;
+}
+
+.names-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.git-name-main {
+  font-size: 50px;
+  margin-right: 14px;
+  font-family: Monaco;
+}
+
+.search-name-main {
+  font-size: 50px;
+  font-style: italic;
+  font-family: Raleway;
+}
+
+.lgnNBtn-main {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.lgnNBtn-main input {
+  width: 80%;
+  height: 71%;
+}
+
+.lgnNBtn-main button {
+  height: 71%;
+  border: 0;
+  border-radius: 2px;
+  background-color: #ac53f2;
+  width: 15%;
+}
+
+.repo-informations {
+  width: 90%;
+  display: flex;
+  margin-top: 53px;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left-side-main {
+  display: flex;
+  flex: 40%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.right-side-main {
+  display: flex;
+  flex: 60%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.avatarNName {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatarNName img {
+  width: 280px;
+  height: 280px;
+}
+
+.name {
+  font-size: 40px;
+}
+
+.user {
+  font-size: 25px;
+  color: #5c5c5c;
+}
+
+.main-informations {
+  margin-top: 6px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.information a {
+  margin-left: 5px;
+}
+
+.repo-name {
+  font-size: 35px;
+  color: #ac53f2;
+}
+
+.repo-description {
+  font-size: 20px;
+}
+
+.stars-repo {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 10%;
+  justify-content: space-between;
+}
+
+.stars-repo a {
+  color: #5c5c5c;
+  font-size: 20px;
+}

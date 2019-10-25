@@ -1,0 +1,62 @@
+.total-container-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.top-bar-not-found {
+  margin-top: 35px;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90%;
+}
+
+.names-not-found {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.git-name-not-found {
+  font-size: 50px;
+  margin-right: 14px;
+  font-family: Monaco;
+}
+
+.search-name-not-found {
+  font-size: 50px;
+  font-style: italic;
+  font-family: Raleway;
+}
+
+.lgnNBtn-not-found {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.lgnNBtn-not-found input {
+  width: 80%;
+  height: 52%;
+}
+
+.lgnNBtn-not-found button {
+  height: 52%;
+  border: 0;
+  border-radius: 2px;
+  background-color: #ac53f2;
+  width: 15%;
+}
+
+.not-found-text {
+  display: flex;
+  margin-top: 209px;
+  font-size: 40px;
+  color: #ac53f2;
+  height: 41px;
+}
