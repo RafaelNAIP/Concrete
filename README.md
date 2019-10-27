@@ -68,3 +68,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # Concretre
 
+
+# Routes
+
+Root Route, that stay the inital screen that users can be searched and it can go for the others 2 screens (if user exists or no exists)
+
+Main Route, that get the user informations and repositories, you can search others user by this screen too
+
+NotFound Route, that show the message if the user searched do not exist
+
+# Tests
+
+To do the test you have to open your terminal and write
+### `yarn test`
+
